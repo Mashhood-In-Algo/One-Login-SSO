@@ -1,0 +1,29 @@
+<div class="login-page">
+    <div class="login-card">
+      <h2>Welcome to MyApp</h2>
+  
+      <!-- Regular login form (if you want your own username/password fields) -->
+      <form>
+        <div class="form-field">
+          <label for="username">Username</label>
+          <input type="text" id="username" placeholder="Enter your username" />
+        </div>
+  
+        <div class="form-field">
+          <label for="password">Password</label>
+          <input type="password" id="password" placeholder="Enter your password" />
+        </div>
+  
+        <button type="submit" class="primary-btn">Login</button>
+      </form>
+  
+      <p class="divider"><span>OR</span></p>
+  
+      <!-- OneLogin SSO button -->
+      <button (click)="login()" class="onelogin-btn">
+        <img src="https://cdn-icons-png.flaticon.com/512/4926/4926861.png" alt="OneLogin Icon" />
+        Sign in with OneLogin
+      </button>
+    </div>
+  </div>
+  

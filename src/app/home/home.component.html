@@ -1,0 +1,34 @@
+<div class="home-page">
+    <!-- A top header or navigation bar -->
+    <header class="home-header">
+      <h1>Welcome to MyApp</h1>
+      <button (click)="logout()" class="logout-btn">Logout</button>
+    </header>
+  
+    <!-- Main content area -->
+    <div class="content">
+      <div class="welcome-message">
+        <h2>Hi, {{ claims?.name || 'User' }}!</h2>
+        <p>Below are your claims:</p>
+      </div>
+  
+      <!-- Card displaying the claims -->
+      <div class="claims-card">
+        <h3>User Claims</h3>
+  
+        <!-- Option A: Display as JSON -->
+        <!--
+        <pre>{{ claims | json }}</pre>
+        -->
+  
+        <!-- Option B: Display each claim in a table -->
+        <table class="claims-table">
+          <tr *ngFor="let kv of claims | keyvalue">
+            <th>{{ kv.key }}</th>
+            <td>{{ kv.value }}</td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </div>
+  

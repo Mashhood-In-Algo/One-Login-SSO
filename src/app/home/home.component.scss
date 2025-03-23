@@ -1,0 +1,95 @@
+.home-page {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(135deg, #fdd49a 0%, #f48981 50%, #f6c4ec 100%);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+    margin: 0;
+  }
+  
+  /* Header/Nav bar at the top */
+  .home-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffffaa; /* Slightly transparent white */
+    padding: 1rem 2rem;
+    backdrop-filter: blur(5px);
+  }
+  
+  .home-header h1 {
+    margin: 0;
+    font-size: 1.5rem;
+  }
+  
+  .logout-btn {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 0.3rem;
+    background-color: #dc3545; /* A red tone */
+    color: #fff;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.2s;
+  }
+  .logout-btn:hover {
+    background-color: #c82333;
+  }
+  
+  /* Main content container */
+  .content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* Welcome message styling */
+  .welcome-message {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .welcome-message h2 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Card for displaying claims */
+  .claims-card {
+    background-color: #fff;
+    padding: 2rem;
+    margin: 0 1rem 2rem;
+    border-radius: 0.75rem;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+    width: 500px; /* Adjust as needed */
+    max-width: 90%;
+    text-align: left;
+  }
+  
+  .claims-card h3 {
+    margin-top: 0;
+    margin-bottom: 1rem;
+  }
+  
+  /* Table styling */
+  .claims-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .claims-table th,
+  .claims-table td {
+    padding: 0.5rem;
+    vertical-align: top;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .claims-table th {
+    text-align: left;
+    width: 30%;
+    color: #555;
+  }
+  
